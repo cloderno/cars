@@ -615,6 +615,14 @@ function initVisitModal() {
     });
 
     $('#createVisitModal').on('show.bs.modal', function (event) {
+        var startTimeInput = $('#start_time_hour');
+        if (!startTimeInput.val()) {
+            var now = new Date();
+            var hours = String(now.getHours()).padStart(2, '0');
+            var minutes = String(now.getMinutes()).padStart(2, '0');
+            startTimeInput.val(`${hours}:${minutes}`);
+        }
+
         fetchCarsAndPopulateOptions();
     });
 

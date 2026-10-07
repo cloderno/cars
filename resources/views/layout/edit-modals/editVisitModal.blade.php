@@ -11,9 +11,8 @@
                 <form id="editVisit">
                     <div class="mb-3">
                         <label for="end_time_hour" class="col-form-label">Введите конец:</label>
-                           <input type="text" name="end_time_hour" class="form-control" id="end_time_hour"
-                               placeholder="ЧЧ:ММ" inputmode="numeric" autocomplete="off" maxlength="5"
-                               pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]" required>
+                        <input type="time" name="end_time_hour" class="form-control" id="end_time_hour"
+                               autocomplete="off" step="">
                         <div id="visit-end-error" class="invalid-feedback"></div>
                     </div>
                 </form>
@@ -25,3 +24,4 @@
         </div>
     </div>
 </div>
+ 

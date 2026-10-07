@@ -16,11 +16,10 @@
                         <div id="visit-id-error" class="invalid-feedback"></div>
                     </div>
                     <input type="hidden" name="client_id" id="client_id_input" value="">
-                    <div class="mb-3">
+					<div class="mb-3">
                         <label for="start_time_hour" class="col-form-label">Введите начало:</label>
-                           <input type="text" name="start_time_hour" class="form-control" id="start_time_hour"
-                               placeholder="ЧЧ:ММ" inputmode="numeric" autocomplete="off" maxlength="5"
-                               pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]" required>
+                        <input type="time" name="start_time_hour" class="form-control" id="start_time_hour"
+                               autocomplete="off" step="">
                         <div id="visit-start-error" class="invalid-feedback"></div>
                     </div>
                     <div class="mb-3">
